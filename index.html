@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditKaro.in | Premium Video Editing & Social Media Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script src="components/navbar.js" defer></script>
+</head>
+<body class="bg-black text-gray-100 font-sans">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-black">
+        <div class="loader animate-spin rounded-full border-4 border-t-4 border-cyan-500 h-12 w-12"></div>
+    </div>
+
+    <!-- Navbar Component -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <video autoplay muted loop class="absolute w-full h-full object-cover">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-digital-grid-538-large.mp4" type="video/mp4">
+        </video>
+        <div class="container mx-auto px-6 relative z-20 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 font-montserrat bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+                Visual Storytelling <span class="block">Redefined</span>
+            </h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10">Crafting compelling narratives through premium video editing and strategic social media marketing</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn-secondary">Get Started</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+            <i data-feather="chevron-down" class="text-white w-8 h-8"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-black to-gray-900/50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 font-montserrat">About <span class="text-cyan-400">EditKaro</span></h2>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        We're a creative powerhouse specializing in transforming raw footage into captivating visual stories. 
+                        Our team of expert editors and marketers work together to create content that engages, inspires, 
+                        and converts.
+                    </p>
+                    <p class="text-lg mb-8 leading-relaxed">
+                        From viral short-form content to cinematic long-form videos, we bring your vision to life with 
+                        cutting-edge techniques and a keen eye for detail.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="stat-box">
+                            <span class="text-4xl font-bold text-cyan-400">500+</span>
+                            <span class="text-sm">Projects Completed</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="text-4xl font-bold text-purple-400">100+</span>
+                            <span class="text-sm">Satisfied Clients</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="text-4xl font-bold text-pink-400">10M+</span>
+                            <span class="text-sm">Total Views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="glass-card p-1 rounded-xl">
+                        <img src="http://static.photos/technology/1024x576/42" alt="EditKaro Team" class="rounded-lg w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-cyan-500 to-purple-600 p-1 rounded-lg z-10">
+                        <div class="bg-black p-4 rounded-lg">
+                            <i data-feather="award" class="text-cyan-400 w-8 h-8 mb-2"></i>
+                            <h3 class="font-bold">Award Winning</h3>
+                            <p class="text-sm">Editing Team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 font-montserrat">Our <span class="text-cyan-400">Services</span></h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-300">Comprehensive solutions tailored to your creative needs</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card">
+                    <div class="icon-box bg-cyan-500/10">
+                        <i data-feather="film" class="text-cyan-400"></i>
+                    </div>
+                    <h3>Short-Form Video Editing</h3>
+                    <p>Perfect for TikTok, Instagram Reels, and YouTube Shorts - designed to go viral</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box bg-purple-500/10">
+                        <i data-feather="video" class="text-purple-400"></i>
+                    </div>
+                    <h3>Long-Form Content</h3>
+                    <p>Cinematic storytelling for documentaries, interviews, and YouTube content</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box bg-pink-500/10">
+                        <i data-feather="dollar-sign" class="text-pink-400"></i>
+                    </div>
+                    <h3>E-Commerce Ads</h3>
+                    <p>High-converting product videos that drive sales and engagement</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box bg-yellow-500/10">
+                        <i data-feather="sliders" class="text-yellow-400"></i>
+                    </div>
+                    <h3>Color Grading</h3>
+                    <p>Professional color correction to give your footage that cinematic look</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box bg-green-500/10">
+                        <i data-feather="trending-up" class="text-green-400"></i>
+                    </div>
+                    <h3>Social Media Strategy</h3>
+                    <p>Data-driven content planning to maximize your online presence</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box bg-red-500/10">
+                        <i data-feather="target" class="text-red-400"></i>
+                    </div>
+                    <h3>Targeted Advertising</h3>
+                    <p>Precision-targeted ad campaigns that deliver real results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 font-montserrat">Our <span class="text-cyan-400">Portfolio</span></h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-300">Explore our diverse range of video editing styles</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="short-form">Short Form</button>
+                <button class="filter-btn" data-filter="long-form">Long Form</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+                <button class="filter-btn" data-filter="football">Football</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="documentary">Documentary</button>
+                <button class="filter-btn" data-filter="color-grading">Color Grading</button>
+                <button class="filter-btn" data-filter="anime">Anime</button>
+                <button class="filter-btn" data-filter="ads">Commercials</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gradient-to-b from-gray-900/50 to-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 font-montserrat">Client <span class="text-cyan-400">Testimonials</span></h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-300">What our clients say about our work</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i data-feather="message-square" class="text-cyan-400"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "EditKaro transformed our social media presence. Their edits increased our engagement by 300% and helped us gain 50k new followers in just 3 months!"
+                    </p>
+                    <div class="client-info">
+                        <img src="http://static.photos/people/200x200/1" alt="Client" class="client-img">
+                        <div>
+                            <h4>Rahul Sharma</h4>
+                            <p class="text-sm text-gray-400">Founder, TechStart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i data-feather="message-square" class="text-purple-400"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The documentary-style video they created for our NGO perfectly captured our mission. It helped us secure major funding and partnerships."
+                    </p>
+                    <div class="client-info">
+                        <img src="http://static.photos/people/200x200/2" alt="Client" class="client-img">
+                        <div>
+                            <h4>Priya Patel</h4>
+                            <p class="text-sm text-gray-400">Director, GreenFuture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i data-feather="message-square" class="text-pink-400"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "As a gaming content creator, I needed someone who understands the culture. EditKaro's edits are always on point and help my videos stand out."
+                    </p>
+                    <div class="client-info">
+                        <img src="http://static.photos/people/200x200/3" alt="Client" class="client-img">
+                        <div>
+                            <h4>Vikram Singh</h4>
+                            <p class="text-sm text-gray-400">Gaming YouTuber</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 font-montserrat">Get In <span class="text-cyan-400">Touch</span></h2>
+                    <p class="text-lg mb-8 leading-relaxed">
+                        Ready to elevate your content? Reach out to discuss your project and how we can bring your vision to life.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="contact-icon bg-cyan-500/10">
+                                <i data-feather="mail" class="text-cyan-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email Us</h4>
+                                <a href="mailto:contact@editkaro.in" class="text-gray-300 hover:text-cyan-400 transition">contact@editkaro.in</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="contact-icon bg-purple-500/10">
+                                <i data-feather="phone" class="text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Call Us</h4>
+                                <a href="tel:+919876543210" class="text-gray-300 hover:text-purple-400 transition">+91 98765 43210</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="contact-icon bg-pink-500/10">
+                                <i data-feather="map-pin" class="text-pink-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Visit Us</h4>
+                                <p class="text-gray-300">123 Creative Lane, Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <h4 class="text-xl font-medium mb-4">Follow Us</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="social-icon hover:bg-cyan-500/10 hover:text-cyan-400">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon hover:bg-blue-500/10 hover:text-blue-400">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon hover:bg-red-500/10 hover:text-red-400">
+                                <i data-feather="youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon hover:bg-blue-400/10 hover:text-blue-300">
+                                <i data-feather="twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon hover:bg-purple-500/10 hover:text-purple-400">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="glass-card p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                        <div class="space-y-5">
+                            <div>
+                                <label for="name" class="block mb-2">Your Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2">Email Address</label>
+                                <input type="email" id="email" class="form-input" placeholder="Enter your email">
+                            </div>
+                            <div>
+                                <label for="service" class="block mb-2">Service Needed</label>
+                                <select id="service" class="form-input">
+                                    <option value="">Select a service</option>
+                                    <option value="short-form">Short-Form Video Editing</option>
+                                    <option value="long-form">Long-Form Content</option>
+                                    <option value="ecommerce">E-Commerce Ads</option>
+                                    <option value="color-grading">Color Grading</option>
+                                    <option value="strategy">Social Media Strategy</option>
+                                    <option value="ads">Targeted Advertising</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block mb-2">Your Message</label>
+                                <textarea id="message" rows="4" class="form-input" placeholder="Tell us about your project"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold flex items-center">
+                        <i data-feather="film" class="text-cyan-400 mr-2"></i>
+                        <span>EditKaro.in</span>
+                    </a>
+                    <p class="text-gray-400 mt-2">Premium Video Editing & Social Media Marketing</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div>
+                        <h4 class="font-medium mb-3">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#about" class="footer-link">About Us</a></li>
+                            <li><a href="#services" class="footer-link">Services</a></li>
+                            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                            <li><a href="#contact" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium mb-3">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="footer-link">Video Editing</a></li>
+                            <li><a href="#" class="footer-link">Social Media Marketing</a></li>
+                            <li><a href="#" class="footer-link">Content Strategy</a></li>
+                            <li><a href="#" class="footer-link">Advertising</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium mb-3">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Terms of Service</a></li>
+                            <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 EditKaro.in. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-cyan-400 transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-400 transition">
+                        <i data-feather="youtube"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-300 transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 p-3 rounded-full shadow-lg transition-all opacity-0 invisible">
+        <i data-feather="arrow-up"></i>
+    </button>
+
+    <!-- Video Lightbox Modal -->
+    <div id="videoModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 opacity-0 invisible transition-all duration-300">
+        <div class="relative w-full max-w-6xl mx-4">
+            <button id="closeModal" class="absolute -top-12 right-0 text-white hover:text-cyan-400 transition">
+                <i data-feather="x" class="w-8 h-8"></i>
+            </button>
+            <div class="aspect-w-16 aspect-h-9 bg-black">
+                <iframe id="modalVideo" class="w-full h-full" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Component Scripts -->
+    <script src="components/navbar.js"></script>
+    
+    <!-- Main Script -->
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
