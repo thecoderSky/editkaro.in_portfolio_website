@@ -29,7 +29,7 @@ To create a modern company portfolio website with multiple sections, interactive
 
 # 🔗 Live Project
 
-👉 [Add your GitHub repo link here]
+👉 https://editkaro-new-portfolio.netlify.app/
 
 # 📌 Note
 
